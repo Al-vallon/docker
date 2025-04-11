@@ -1,1 +1,1 @@
-* * * * * root goaccess /var/log/nginx/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html --daemonize
+* * * * * root goaccess /var/log/nginx/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --no-global-config --no-progress && chown www-data:www-data /var/www/html/stats/index.html
