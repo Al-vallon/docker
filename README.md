@@ -102,3 +102,8 @@ cat access.log
 grep "404" access.log
 ```
 Assurez-vous que le conteneur nginx_proxy est en cours d'exécution pour utiliser ces commandes.
+
+Run le docker 
+```
+docker compose up --build
+```
