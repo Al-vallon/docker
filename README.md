@@ -42,13 +42,21 @@ Les paramètres d'authentification sont stockés dans le fichier .env:
 
 AUTH_USER: Nom d'utilisateur pour l'accès à GoAccess (par défaut: admin)
 AUTH_PASS: Mot de passe pour l'accès à GoAccess (par défaut: admin)
+
 Ce projet représente une solution complète pour la surveillance et l'analyse des logs Nginx avec une interface utilisateur intuitive et sécurisée.
 
 Location des logs:
 Nginx logs:
 
-Access log: /var/log/nginx/access.log
-Error log: /var/log/nginx/error.log
+Access log: 
+```
+docker exec nginx_proxy cat /var/log/nginx/access.log
+```
+Error log:
+```
+docker exec nginx_proxy cat /var/log/nginx/error.log
+```
+
 Apache logs (in GoAccess container):
 
 ```
